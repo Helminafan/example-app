@@ -4,7 +4,7 @@
     <div class="container">
         <h1 class="text-center mt-3">Review Barang</h1>
         <div class="card mt-5" style="max-width: 1110px;">
-            <div class="row g-0">
+            <div class="row g-0 align-items-center">
                 <div class="col">
                     <img src="{{asset('assets/'.$reviewBarang->fotoBarang)}}" class="img-fluid rounded-start" alt="...">
                 </div>
@@ -37,7 +37,12 @@
                             <div class="col-1">:</div>
                             <p class="card-text col">{{$reviewBarang->reviewBarang}}</p>
                         </div>
-                        <p class="card-text"><small class="text-muted">{{$reviewBarang->tanggalDiPublish}}</small></p>
+                        <div class="row">
+                            <div class="col-2">Dipublihsh</div>
+                            <div class="col-1">:</div>
+                            <p class="card-text col"><small class="text-muted">{{$reviewBarang->tanggalDiPublish}}</small></p>
+                        </div>
+
                         <a href="{{route('daftarBarang.view')}}" class="btn btn-success mb-2" style="float: right;">Kembali</a>
                     </div>
                 </div>
